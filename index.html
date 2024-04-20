@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>hDC Host</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/090a14137c.js" crossorigin="anonymous"></script>
+        <script src="./js.js"></script>
+    </head>
+    <body>
+        <header class="position-fixed  w-100">
+            <div class="container-fluid p-3 d-flex flex-lg-row align-items-center justify-content-between" id="header-container">
+                <div class="logo ">
+                    <img
+                        class="mr-4"
+                        src="./assets/hdchostlogo.png"
+                        alt="logo"
+                        width="50"
+                    >
+                </div>
+                <div class="nav-bar d-flex align-items-center">
+                    <a href="#home">HOME</a>
+                    <a href="#pricing-container">PREÇOS</a>
+                    <a href="#content-mensagem">CONTATO</a>
+                    <div class="content-button">
+                        <button class="btn btn-success">ENTRAR</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="home">
+            <div class="img-banner">
+                <div class="class-main-banner">
+                    <h1>hDC Host</h1>
+                    <p>Os melhores serviços para projetos de todos os tamanhos!</p>
+                </div>
+            </div>
+        </section>
+            <section>
+                <div class="row d-flex justify-content-center" id="servicos-container">
+                    <div></div>
+                    <div class="col-4 card-text align-items-center d-flex flex-column ">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p class="title-services">Segurança</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="col-4 card-text align-items-center d-flex flex-column " id="cards">
+                        <i class="fa-solid fa-rocket"></i>
+                        <p class="title-services">Performance</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="col-4 card-text align-items-center d-flex flex-column ">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="title-services">Suporte 24/7</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="pricing-container" id="pricing-container">
+                <h2>Planos e Preços</h2>
+                <p>Selecione o plano que atende as suas necessidades</p>
+                <div class="plans-container">
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$15/mês</li>
+                            <li class="plan-name">Básico</li>
+                            <li>2GB de espaço</li>
+                            <li>1 Subdomínios</li>
+                            <li>25 contas de e-mail</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="plan-btn">Saber mais</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$30/mês</li>
+                            <li class="plan-name">Dedicado</li>
+                            <li>5GB de espaço</li>
+                            <li>10 Subdomínios</li>
+                            <li>50 contas de e-mail</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="plan-btn">Saber mais</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price recommended">R$50/mês</li>
+                            <li class="plan-name">Dedicado Plus</li>
+                            <li>10GB de espaço</li>
+                            <li>10 Subdomínios</li>
+                            <li>100 contas de e-mail</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="plan-btn recommended">Saber mais</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$100/mês</li>
+                            <li class="plan-name">Cloud</li>
+                            <li>20GB de espaço</li>
+                            <li>20 Subdomínios</li>
+                            <li>200 contas de e-mail</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="plan-btn">Saber mais</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid container-dominio p-5">
+                    <div class="title-dominio align-items-center d-flex flex-column">
+                        <h2>
+                            Qual dominio você quer para seu site?
+                        </h2>
+                        <p>Verifique se o dominio esta disponivel</p>
+                    </div>
+                    <div class="align-items-center d-flex flex-column">
+                        <form class="form-dominio">
+                            <input type="text" id="meuInput" placeholder="Digite o dominio desejado" >
+                            <button class=" btn btn-success mt-3" onclick="processarInput()">Procurar Dominio</button>
+                        </form>
+                       
+                    </div>
+                </div>
+            </section>
+            <section id="content-mensagem">
+                <div class="container content-mensagem">
+                  <div class="text-mensagem">
+                    <h2>Mande uma mensagem</h2>
+                    <p>Envie a sua mensagem, em até 4 horas um especialista entrara em contato</p>
+                  </div>
+                  <div>
+                    <form class="form-mensagem">
+                        <div class="inputs">
+                            <input type="text" placeholder="Seu nome">
+                            <input type="email" placeholder="Seu e-mail">
+                        </div>
+                        <textarea name="textarea"class="" placeholder="Descreva oque precisa ou seu projeto."></textarea>
+                      <div>
+                        <button class=" btn btn-success mt-3">Enviar</button>
+                      </div>
+                        
+                    </form>
+                  </div>
+                </div>
+            </section>
+            <div class="container-fluid mt-4 mb-5 justify-content-center d-flex">
+                <p class="">hDC Host@2022</p>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
